@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abaya Qismina Dewasa Muslimah - Elegant & Luxury</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>✨Summer Cargo Pants | Celana Cargo Premium dengan 7 Warna</title>
     <style>
         :root {
-            --primary: #F8C8DC;
-            --secondary: #E2AFDE;
-            --accent: #D4A5A5;
-            --text: #5A5A5A;
-            --light: #FFF9FB;
-            --dark: #3A3A3A;
-            --gold: #D4AF37;
+            --primary: #3a7bd5;
+            --secondary: #00d2ff;
+            --accent: #ff6b6b;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+            --text: #333333;
         }
         
         * {
@@ -29,20 +27,25 @@
             line-height: 1.6;
         }
         
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
-        /* Header */
         header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
             padding: 20px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: sticky;
+            position: fixed;
+            width: 100%;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
         .header-content {
@@ -54,106 +57,129 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: var(--light);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            color: var(--primary);
         }
         
         .cta-button {
-            background-color: var(--accent);
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
             text-decoration: none;
+            border-radius: 30px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(58, 123, 213, 0.4);
         }
         
         .cta-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(58, 123, 213, 0.6);
         }
         
-        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 60px 0;
+            padding: 180px 0 80px;
             text-align: center;
-            color: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://hellohobot.com/cdn/shop/files/image_580_1719832124391-59634302-88316472-76542644_0.webp?v=1740985050&width=823') no-repeat center center/cover;
         }
         
         .hero h1 {
-            font-size: 42px;
+            font-size: 48px;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            color: var(--dark);
         }
         
         .hero p {
             font-size: 20px;
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto 30px;
         }
         
-        .price-container {
-            background-color: white;
+        .price-tag {
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 24px;
             display: inline-block;
-            padding: 20px 40px;
-            border-radius: 10px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
         
         .original-price {
             text-decoration: line-through;
-            color: var(--text);
-            font-size: 24px;
-        }
-        
-        .discounted-price {
-            color: var(--accent);
-            font-size: 36px;
-            font-weight: 700;
+            color: #777;
+            font-size: 18px;
+            margin-right: 10px;
         }
         
         .discount-badge {
-            background-color: var(--gold);
+            background-color: var(--accent);
             color: white;
-            padding: 5px 15px;
+            padding: 5px 10px;
             border-radius: 20px;
+            font-size: 14px;
             font-weight: 600;
-            display: inline-block;
-            margin-left: 10px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
         }
         
-        .countdown {
-            font-size: 24px;
-            margin: 20px 0;
-            font-weight: 600;
+        .features {
+            padding: 80px 0;
+            background-color: white;
         }
         
-        /* Product Gallery */
-        .gallery {
-            padding: 60px 0;
-        }
-        
-        .gallery h2 {
+        .section-title {
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
+            margin-bottom: 50px;
+            font-size: 36px;
             color: var(--dark);
         }
         
-        .gallery-grid {
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: var(--light);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .gallery {
+            padding: 80px 0;
+            background-color: #f5f7fa;
+        }
+        
+        .gallery-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            margin-top: 40px;
         }
         
         .gallery-item {
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
         }
         
         .gallery-item:hover {
@@ -164,213 +190,126 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: block;
+            transition: all 0.5s ease;
         }
         
-        /* Features */
-        .features {
-            padding: 60px 0;
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .testimonials {
+            padding: 80px 0;
             background-color: white;
         }
         
-        .features h2 {
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
             text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-item {
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: 10px;
-            background-color: var(--light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        
-        .feature-item h3 {
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 60px 0;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .testimonials h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
         }
         
         .testimonial-item {
-            background-color: white;
             padding: 30px;
-            border-radius: 10px;
-            color: var(--text);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
         
         .testimonial-text {
+            font-size: 18px;
             font-style: italic;
             margin-bottom: 20px;
         }
         
         .testimonial-author {
-            font-weight: 600;
-            color: var(--dark);
+            font-weight: 700;
         }
         
-        .stars {
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-        
-        /* FAQ */
-        .faq {
-            padding: 60px 0;
-        }
-        
-        .faq h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        
-        .faq-question {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-        
-        /* CTA Section */
-        .cta-section {
+        .size-guide {
             padding: 80px 0;
+            background-color: #f5f7fa;
+        }
+        
+        .size-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        .size-table th, .size-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .size-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .size-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .cta-section {
+            padding: 100px 0;
             text-align: center;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
         }
         
         .cta-section h2 {
-            font-size: 36px;
+            font-size: 42px;
             margin-bottom: 20px;
         }
         
         .cta-section p {
             font-size: 20px;
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto 40px;
         }
         
-        .big-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            display: inline-block;
+        .benefits {
+            padding: 80px 0;
+            background-color: white;
         }
         
-        .big-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        .benefits-list {
+            max-width: 700px;
+            margin: 0 auto;
         }
         
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .social-links {
+        .benefit-item {
             display: flex;
-            gap: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: var(--light);
         }
         
-        .social-links a {
-            color: white;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
+        .benefit-icon {
+            margin-right: 15px;
+            font-size: 24px;
             color: var(--primary);
         }
         
-        .copyright {
+        footer {
+            padding: 40px 0;
+            background-color: var(--dark);
+            color: white;
             text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #aaa;
-            font-size: 14px;
         }
         
-        /* Popup */
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-link {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
         .popup {
             position: fixed;
             bottom: 20px;
@@ -378,338 +317,329 @@
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            max-width: 300px;
-            transform: translateY(150%);
-            transition: transform 0.5s ease;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
             z-index: 1000;
+            max-width: 350px;
+            display: none;
+            animation: slideIn 0.5s forwards;
         }
         
-        .popup.show {
-            transform: translateY(0);
-        }
-        
-        .popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
         
         .popup-close {
-            background: none;
-            border: none;
-            font-size: 20px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
             cursor: pointer;
-            color: var(--text);
+            font-size: 20px;
         }
         
         .popup-content {
-            display: flex;
-            align-items: center;
+            text-align: center;
         }
         
-        .popup-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-            margin-right: 15px;
-            object-fit: cover;
+        .popup-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
         
-        .popup-text {
+        .popup-timer {
             font-size: 14px;
-        }
-        
-        .popup-text strong {
             color: var(--accent);
+            margin-bottom: 15px;
         }
         
-        /* Responsive */
+        .countdown {
+            font-weight: 700;
+        }
+        
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
             
             .hero p {
                 font-size: 18px;
             }
             
-            .price-container {
-                padding: 15px 30px;
-            }
-            
-            .original-price {
-                font-size: 20px;
-            }
-            
-            .discounted-price {
+            .section-title {
                 font-size: 28px;
+            }
+            
+            .cta-section h2 {
+                font-size: 32px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container header-content">
-            <div class="logo">Abaya Qismina</div>
-            <a href="#order" class="cta-button">Pesan Sekarang</a>
+            <div class="logo">✨Summer Cargo</div>
+            <a href="#order" class="cta-button">PESAN SEKARANG</a>
         </div>
     </header>
     
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Abaya Qismina Dewasa Muslimah</h1>
-            <p>Elegant & Luxury - Tampil anggun dengan detail bordir emas premium yang mewah</p>
+            <h1>Bebaskan Gaya Anda dengan ✨Summer Cargo Pants</h1>
+            <p>Celana cargo premium dengan desain vintage retro yang stylish, nyaman dipakai seharian, dan memiliki 7 pilihan warna eksklusif!</p>
             
-            <div class="price-container">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
+            <div style="position: relative; display: inline-block;">
+                <div class="price-tag">
+                    <span class="original-price">Rp299.000</span>
+                    <span>Rp188.500</span>
+                </div>
+                <div class="discount-badge">DISKON 37%</div>
             </div>
             
-            <div class="countdown" id="countdown">
-                Promo berakhir dalam: 23:59:59
-            </div>
-            
-            <a href="#order" class="cta-button">Dapatkan Sekarang</a>
-        </div>
-    </section>
-    
-    <!-- Product Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2>Galeri Produk</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina Model 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_5151491750595682922.jpeg" alt="Abaya Qismina Model 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8080851750595683993.jpeg" alt="Abaya Qismina Model 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6839561750595683944.jpeg" alt="Abaya Qismina Model 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8897541750595682978.jpeg" alt="Abaya Qismina Model 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_4829401750595682954.jpeg" alt="Abaya Qismina Model 6">
-                </div>
+            <div style="margin-top: 40px;">
+                <a href="#order" class="cta-button" style="padding: 15px 40px; font-size: 18px;">PESAN SEKARANG</a>
             </div>
         </div>
     </section>
     
-    <!-- Features -->
     <section class="features">
         <div class="container">
-            <h2>Keunggulan Abaya Qismina</h2>
-            <div class="feature-grid">
+            <h2 class="section-title">Kenapa Memilih ✨Summer Cargo Pants?</h2>
+            
+            <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h3>Bahan Premium</h3>
-                    <p>Dibuat dari bahan Chiffon Rose yang ringan dan mengalir anggun, dilapisi sepenuhnya dengan jersey lembut untuk kenyamanan maksimal.</p>
+                    <div class="feature-icon">🎒</div>
+                    <h3>Multiple Pockets</h3>
+                    <p>Banyak kantong fungsional untuk menyimpan barang-barang penting Anda dengan praktis.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-spa"></i>
+                <div class="gallery-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0702/0062/3369/files/giphy_b4bdfb8e-b8dc-4088-8b81-53fd571be341.gif?v=1719832680" alt="Summer Cargo Pants - Model GIF 1">
                     </div>
-                    <h3>Desain Elegan</h3>
-                    <p>Potongan A-line yang mengalir indah saat Anda berjalan dengan desain lapisan ruffle yang menciptakan siluet yang anggun.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">👖</div>
+                    <h3>Lightweight Fabric</h3>
+                    <p>Bahan ringan yang nyaman dipakai seharian tanpa membuat gerah.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-crown"></i>
+                <div class="gallery-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0702/0062/3369/files/giphy_3a40f04f-9601-4610-a7ac-2f6d996de3e1.gif?v=1719832743 alt="Summer Cargo Pants - Model GIF 1">
                     </div>
-                    <h3>Detail Mewah</h3>
-                    <p>Detail bordir emas premium di ujung lengan dan lapisan abaya menambahkan sentuhan mewah namun halus.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Stylish Design</h3>
+                    <p>Desain vintage retro yang trendy dan cocok untuk berbagai kesempatan.</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-gift"></i>
+                <div class="gallery-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0702/0062/3369/files/giphy_c71404a4-d2ef-434b-9a4b-945f156a3b77.gif?v=1719832859"Summer Cargo Pants - Model GIF 1">
                     </div>
-                    <h3>Paket Lengkap</h3>
-                    <p>Dilengkapi dengan syal tangan yang serasi, terbuat dari kain yang sama dan dihiasi dengan aksen emas.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">💨</div>
+                    <h3>Breathable Material</h3>
+                    <p>Bahan yang breathable membuat Anda tetap nyaman meski dipakai seharian.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Testimonials -->
-    <section class="testimonials">
+    <section class="gallery">
         <div class="container">
-            <h2>Apa Kata Pelanggan Kami?</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Abayanya sangat nyaman dipakai dan bahannya adem. Bordir emasnya bikin tampilan jadi lebih mewah. Recomended banget!"</p>
-                    <p class="testimonial-author">- Siti Aisyah, Jakarta</p>
+            <h2 class="section-title">Galeri Produk</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">Lihat bagaimana ✨Summer Cargo Pants tampil memukau dalam berbagai warna dan gaya!</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://hellohobot.com/cdn/shop/files/13834b4be5f6d202de49ebbf56785b98294c88062_1383.webp?v=1740985050&width=823" alt="Summer Cargo Pants - Model 1">
                 </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Pas banget buat acara pernikahan teman. Banyak yang nanya beli dimana. Pelayanannya juga cepat dan ramah."</p>
-                    <p class="testimonial-author">- Rina Dewi, Bandung</p>
+                <div class="gallery-item">
+                    <img src="https://hellohobot.com/cdn/shop/files/716299fe378057d42e9d4ecd1c5c7f14.webp?v=1740985050&width=823" alt="Summer Cargo Pants - Model GIF 1">
                 </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">"Desainnya feminin banget dan jatuhnya pas di badan. Udah beli 2 warna karena diskonnya menggiurkan."</p>
-                    <p class="testimonial-author">- Maya Fitriani, Surabaya</p>
+                <div class="gallery-item">
+                    <img src="https://hellohobot.com/cdn/shop/files/16a9bcd2f7e33e047d9067490bcecf53.webp?v=1740985050&width=823" alt="Summer Cargo Pants - Model GIF 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hellohobot.com/cdn/shop/files/image_493_1719832124395-87034875-35144802-50134727_4.webp?v=1740985050&width=823" alt="Summer Cargo Pants - Model 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hellohobot.com/cdn/shop/files/Pantalones-Cargo-informales-recortados-con-m-ltiples-bolsillos-para-mujer-Color-s-lido-Primavera-Verano_jpg_640x640_jpg.webp?v=1740985050&width=823" alt="Summer Cargo Pants - Model 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hellohobot.com/cdn/shop/files/image_834_1719832124509-73583691-2343442-85257364_2.webp?v=1740985050&width=823" alt="Summer Cargo Pants - Model 4">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- FAQ -->
-    <section class="faq" id="faq">
+    <section class="size-guide">
         <div class="container">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
-            <div class="faq-item">
-                <h3 class="faq-question">Apa saja ukuran yang tersedia?</h3>
-                <p>Abaya Qismina tersedia dalam ukuran S, M, L, dan XL dengan cutting yang nyaman dan sesuai untuk tubuh wanita Asia.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Berapa lama waktu pengiriman?</h3>
-                <p>Waktu pengiriman 2-4 hari kerja untuk wilayah Jawa dan 3-7 hari kerja untuk luar Jawa setelah pembayaran dikonfirmasi.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Apakah bisa return atau tukar ukuran?</h3>
-                <p>Kami menerima penukaran ukuran dalam waktu 7 hari setelah barang diterima dengan syarat tag masih terpasang dan belum dicuci.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Metode pembayaran apa saja yang tersedia?</h3>
-                <p>Kami menerima transfer bank (BCA, Mandiri, BRI), e-wallet (OVO, Dana, ShopeePay), dan pembayaran via gerai retail (Alfamart, Indomaret).</p>
+            <h2 class="section-title">Panduan Ukuran</h2>
+            
+            <h3 style="text-align: center; margin-bottom: 20px;">STANDART SIZE (Fit To XL)</h3>
+            <table class="size-table">
+                <tr>
+                    <th>Bagian</th>
+                    <th>Ukuran</th>
+                </tr>
+                <tr>
+                    <td>Lingkar Pinggang normal</td>
+                    <td>66cm</td>
+                </tr>
+                <tr>
+                    <td>Lingkar Pinggang Maksimal</td>
+                    <td>96cm</td>
+                </tr>
+                <tr>
+                    <td>Lingkar Paha</td>
+                    <td>60 cm (masih bisa melar)</td>
+                </tr>
+                <tr>
+                    <td>Lingkar pinggul</td>
+                    <td>105cm (masih bisa melar)</td>
+                </tr>
+                <tr>
+                    <td>Lingkar kaki</td>
+                    <td>38cm</td>
+                </tr>
+                <tr>
+                    <td>Panjang</td>
+                    <td>62cm</td>
+                </tr>
+            </table>
+            
+            <h3 style="text-align: center; margin: 40px 0 20px;">JUMBO SIZE (fit to 3Xl)</h3>
+            <table class="size-table">
+                <tr>
+                    <th>Bagian</th>
+                    <th>Ukuran</th>
+                </tr>
+                <tr>
+                    <td>Lingkar Pinggang normal</td>
+                    <td>70cm</td>
+                </tr>
+                <tr>
+                    <td>Lingkar Pinggang Maksimal</td>
+                    <td>110cm</td>
+                </tr>
+                <tr>
+                    <td>Lingkar Paha</td>
+                    <td>66 cm (masih bisa melar)</td>
+                </tr>
+                <tr>
+                    <td>Lingkar pinggul</td>
+                    <td>116cm (masih bisa melar)</td>
+                </tr>
+                <tr>
+                    <td>Lingkar kaki</td>
+                    <td>42cm</td>
+                </tr>
+                <tr>
+                    <td>Panjang</td>
+                    <td>65cm</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Keunggulan Produk Kami</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎨</div>
+                    <div>
+                        <h3>7 Warna Premium</h3>
+                        <p>Tersedia dalam 7 pilihan warna eksklusif: Pink, black, blue, navy, grey, cream, dan army.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">👖</div>
+                    <div>
+                        <h3>Nyaman Dipakai</h3>
+                        <p>Bahan lightweight dan breathable membuat Anda nyaman beraktivitas seharian.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔄</div>
+                    <div>
+                        <h3>Fleksibel</h3>
+                        <p>Material yang elastis dan bisa melar sesuai bentuk tubuh Anda.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">👔</div>
+                    <div>
+                        <h3>Multifungsi</h3>
+                        <p>Cocok untuk berbagai acara baik formal maupun casual.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- CTA Section -->
     <section class="cta-section" id="order">
         <div class="container">
-            <h2>Jangan Lewatkan Kesempatan Ini!</h2>
-            <p>Dapatkan Abaya Qismina dengan diskon 45% hanya hari ini. Stok terbatas!</p>
-            
-            <div class="price-container" style="margin-bottom: 30px;">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
-            </div>
-            
-            <a href="https://nava.orderonline.id/abaya-qismina-dewasa-muslimah" class="big-button">Pesan Sekarang</a>
-        </div>
+            <h2>Siap Mengubah Gaya Anda?</h2>
+            <p>Dapatkan ✨Summer Cargo Pants sekarang dengan harga spesial diskon 37% sebelum kehabisan!</p>
+            <!-- OrderOnline Embed Code - v8.0.4 --> <div class="ooef"> <form class="orderonline-embed-form" data-username="nava" data-product-slug="summer-cargo-pants" data-product-id="687869b83e0aa9880e01ecb6" id="oo-embed-form-summer-cargo-pants-4868" data-origin="orderonline"> <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div> </form> </div> <script> if (typeof xLogError != 'function') { var xLogError = function (error) { var req = new XMLHttpRequest(); var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack }); var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error'; req.open('POST', 'https://api.orderonline.id/log', true); req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); req.send(params); }; } try { if (typeof xEmbedScript != 'function') { var xEmbedScript = function () { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js'); }; } if (typeof xEmbedInit != 'function') { var xEmbedInit = function (w, n) { if (w.ooe) return; n = w.ooe = function() { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!w._ooe) w._ooe = n; n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = []; }; } xEmbedInit(window); ooe('setup', 'redirect', 'https://nava.orderonline.id'); ooe('init', '5f119cd08dcbdb2737678706', '687869b83e0aa9880e01ecb6', '687869b83e0aa9880e01ecb7', 'oo-embed-form-summer-cargo-pants-4868', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false}); if (!window.jQuery) { !function(w, d, e, v, id, t, s) { if (d.getElementById(id)) return; t = d.createElement(e);t.async = !0;t.src = v;t.id = id; t.addEventListener('load', xEmbedScript); s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery'); } else { xEmbedScript(); } } catch (e) { xLogError(e); throw e; } </script> <!-- End OrderOnline Embed Code -->
     </section>
     
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Tentang Kami</h3>
-                    <p>Menghadirkan busana muslimah berkualitas tinggi dengan desain elegan dan harga terjangkau.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> 0852-3669-9497</li>
-                        <li><i class="fas fa-envelope"></i> cs@abayaqismina.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Link Cepat</h3>
-                    <ul>
-                        <li><a href="#order">Pesan Sekarang</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Follow Kami</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Tentang Kami</a>
+                <a href="#" class="footer-link">Kebijakan Privasi</a>
+                <a href="#" class="footer-link">Syarat & Ketentuan</a>
+                <a href="#" class="footer-link">Kontak</a>
             </div>
-            <div class="copyright">
-                &copy; 2023 Abaya Qismina. All Rights Reserved.
-            </div>
+            <p>© 2025 ✨Summer Cargo Pants. All Rights Reserved.</p>
         </div>
     </footer>
-    
-    <!-- Popup -->
-    <div class="popup" id="popup">
-        <div class="popup-header">
-            <h4>Promo Spesial!</h4>
-            <button class="popup-close" id="popup-close">&times;</button>
-        </div>
-        <div class="popup-content">
-            <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina" class="popup-img">
-            <div class="popup-text">
-                <strong>Diskon 45% Hari Ini!</strong> Dapatkan Abaya Qismina dengan harga Rp245.000 saja. Stok terbatas!
-            </div>
-        </div>
-    </div>
-    
     <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 0);
-            
-            const diff = endOfDay - now;
-            
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('countdown').textContent = 
-                `Promo berakhir dalam: ${Math.floor(hours)}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        // Auto Popup
+        setTimeout(function() {
+            document.getElementById('popup').style.display = 'block';
+        }, 10000);
+        
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
         }
         
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+        // Countdown Timer
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                
+                display.textContent = minutes + ":" + seconds;
+                
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
         
-        // Popup
-        setTimeout(() => {
-            document.getElementById('popup').classList.add('show');
-        }, 5000);
+        window.onload = function () {
+            var tenMinutes = 60 * 10,
+                display = document.querySelector('#countdown');
+            startTimer(tenMinutes, display);
+        };
         
-        document.getElementById('popup-close').addEventListener('click', () => {
-            document.getElementById('popup').classList.remove('show');
-        });
-        
-        // Smooth scrolling
+        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
